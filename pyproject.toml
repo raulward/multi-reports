@@ -14,30 +14,12 @@ dependencies = [
     "langchain-openai (>=1.1.7,<2.0.0)",
     "pgvector (>=0.4.2,<0.5.0)",
     "pandas (>=3.0.0,<4.0.0)",
-    "plotly (>=6.5.2,<7.0.0)",
-    "pydantic-settings (>=2.12.0,<3.0.0)",
-    "sqlalchemy (>=2.0.46,<3.0.0)",
-    "psycopg2-binary (>=2.9.11,<3.0.0)",
-    "alembic (>=1.18.3,<2.0.0)",
-    "numpy (>=2.4.2,<3.0.0)",
-    "python-dotenv (>=1.2.1,<2.0.0)",
-    "httpx (>=0.28.1,<0.29.0)",
-    "beautifulsoup4 (>=4.14.3,<5.0.0)",
-    "lxml (>=6.0.2,<7.0.0)",
-    "openai (>=2.17.0,<3.0.0)"
+    "plotly (>=6.5.2,<7.0.0)"
 ]
 
 [tool.poetry]
-packages = [{include = "multi_reports", from = "src"}]
+packages = [{include = "multi_reports", from = "app"}]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[dependency-groups]
-dev = [
-    "pytest (>=9.0.2,<10.0.0)",
-    "ruff (>=0.15.0,<0.16.0)",
-    "black (>=26.1.0,<27.0.0)",
-    "pre-commit (>=4.5.1,<5.0.0)"
-]
